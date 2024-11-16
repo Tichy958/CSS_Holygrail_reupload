@@ -138,7 +138,7 @@ li {
   .inner-grid {
     display: grid;
     grid-template-rows: 4fr 1fr 60px;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     background-color: rgb(61, 44, 77);
     grid-template-areas:
       "main-alias"
@@ -205,6 +205,7 @@ main {
   border-right: 1px solid rgba(0, 0, 0, 0.122);
   max-width: 1200px; /* Prevents the container from growing beyond a certain width */
 }
+
 article > * {
   margin-bottom: 10px;
 }
@@ -228,6 +229,7 @@ footer {
 .collage img {
   width: 200px;
   height: auto;
+  max-width: 100%;
   border-radius: 15px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s;
